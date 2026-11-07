@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0E1216"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOURNAL DES ALERTES"
+        android:textColor="#8FE3A8"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#9FB4C7"
+        android:textSize="13sp"
+        android:paddingBottom="8dp"
+        android:text="-" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#161C22">
+
+        <TextView
+            android:id="@+id/contenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:textColor="#D7E3EC"
+            android:textIsSelectable="true"
+            android:text="-" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPORTER EN CSV (tableur)"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnTexte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PARTAGER LE JOURNAL (texte)"
+        android:backgroundTint="#37474F"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/btnTout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPORTER TOUT (journal + images scellees)"
+        android:backgroundTint="#1565C0"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E1216">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPTE RENDU D'ALERTE"
+            android:textColor="#FF6B6B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/apercu"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            android:contentDescription="Image de la detection" />
+
+        <TextView
+            android:id="@+id/entete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8FE3A8"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="-" />
+        <EditText android:id="@+id/position"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Position - saisir si le GPS n a pas accroche"
+            android:textColor="#FFD86B" android:textColorHint="#777777"
+            android:fontFamily="monospace" android:inputType="text" />
+
+        <EditText android:id="@+id/classe"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Classe observee" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="text" />
+
+        <EditText android:id="@+id/confiance"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Confiance du detecteur (%)" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/nombre"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Nombre d aeronefs" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/azimut"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Azimut (degres)" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/distance"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Distance estimee (m)" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/altitude"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Altitude estimee (m)" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/cap"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Cap observe (degres)" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="number" />
+
+        <EditText android:id="@+id/observations"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Observations" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <EditText android:id="@+id/indicatif"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Indicatif operateur" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="text" />
+
+        <EditText android:id="@+id/unite"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Unite" android:textColor="#FFFFFF"
+            android:textColorHint="#777777" android:inputType="text" />
+        <EditText android:id="@+id/destinataires"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Destinataires (numeros separes par des virgules)"
+            android:textColor="#FFFFFF" android:textColorHint="#777777"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MESSAGE A TRANSMETTRE"
+            android:textColor="#8FE3A8"
+            android:textSize="12sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/apercuMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A2026"
+            android:padding="10dp"
+            android:fontFamily="monospace"
+            android:textColor="#FFD86B"
+            android:textSize="12sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/statut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#9FB4C7"
+            android:textSize="13sp"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp"
+            android:text="Pret" />
+        <Button
+            android:id="@+id/btnCarte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SITUER SUR LA CARTE"
+            android:backgroundTint="#1565C0"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/btnTransmettre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRANSMETTRE"
+            android:textStyle="bold"
+            android:backgroundTint="#C62828"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENREGISTRER SANS TRANSMETTRE"
+            android:backgroundTint="#37474F"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
